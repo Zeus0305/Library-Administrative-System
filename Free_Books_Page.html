@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Universal Library - Free Books Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style>
+  body{
+    background-color:#3B3B3B; 
+    color:#A4A4A4; 
+    padding:0px; 
+    margin:0px; 
+    font:13px/17px Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  div, ul, li, h1, h2, h3, h4, p, img{
+    margin:0px; padding:0px;
+  }
+
+  ul{
+    list-style-type:none;
+  }
+
+  /*----TOP PANEL----*/
+
+  #header_container{
+    height:299px; 
+    position:relative; 
+    margin:0 auto; 
+    padding:0px; 
+    background-image:url(images/header_slice.gif); 
+    background-repeat:repeat-x; 
+    background-position:top;
+  }
+
+  #header{
+    width:755px; 
+    height:299px; 
+    position:relative; 
+    margin:0 auto; 
+    padding:0px 9px 0px 14px;
+  }
+
+  #header img{
+    height:75px; 
+    width:750px; 
+    position:center; 
+    left:161px;
+    margin-top: 10px;
+    padding:0px;
+    border-radius: 10px;
+  }
+
+  #header ul{
+    width:94px; 
+    height:145px; 
+    padding:23px 29px 20px 40px; 
+    position:absolute; 
+    top:103px; 
+    left:0px; 
+    background:url(images/ul.gif) 0 0 no-repeat;
+  }
+
+  #header ul li{
+    background:url(images/bullet1.gif) 0 7px no-repeat #ccc; 
+    border-bottom:#929292 dotted 1px; 
+    font:12px/24px Verdana, Helvetica, sans-serif; 
+    font-weight:bold; 
+    color: #000; 
+    padding-left:10px;
+  }
+
+  #header ul li.contact{
+    border:none;
+  }
+
+  #header ul li a{
+    font-family:Verdana, Helvetica, sans-serif; 
+    font-size:12px; 
+    font-weight:bold; 
+    text-decoration:none; 
+    background:#ccc; 
+    color:#212121;
+  }
+
+  #header ul li a:hover{
+    background:#ccc; 
+    color:#B53332; 
+    text-decoration:none;
+  }
+
+  #header p{
+    padding:137px 0px 0px 33px; 
+    background:url(images/banner.jpg) 0 0 no-repeat #fff; 
+    width:547px; 
+    height:51px; 
+    position:absolute; 
+    top:103px; 
+    left:175px;
+    object-fit:auto;
+  }
+
+  /*----BODY MIDDLE PANEL----*/
+
+  #bodymiddlePan{
+    width:600px; 
+    position:relative; 
+    margin:0 auto; 
+    padding:0 88px; 
+    clear:both;
+    align-content:justify;
+  }
+
+  #bodymiddlePan h2{
+    width:400px; 
+    height:68px; 
+    display:block; 
+    background:#3B3B3B; 
+    color:#FBD61A; 
+    font:28px/68px Georgia, "Times New Roman", Times, serif; 
+    font-weight:normal;
+  }
+
+  #bodymiddlePan p{
+    background:#3B3B3B; 
+    color:#fff;
+  }
+
+  #bodymiddlePan ul li a{ 
+    text-decoration:none;
+  }
+
+  #bodymiddlePan ul li a:hover{
+    background:#3B3B3B; 
+    text-decoration:none;
+  }
+
+  /*----BODY MIDDLE PANEL----*/
+
+  /*----BODY BOTTOM PANEL----*/
+
+  #bodyBottomPan{
+    width:690px; 
+    background:url(images/body_shadow.gif) 0 0 no-repeat; 
+    position:relative; 
+    margin:0 auto; 
+    padding:54px 0 0 88px; 
+    clear:both;
+  }
+
+  /*----Info Panel----*/
+
+  #address{
+    width:187px; 
+    height:192px; 
+    background:url(images/infopanelbg.jpg) 0 100% no-repeat #3B3B3B; 
+    float:left; 
+    margin:0 28px 0 0; 
+    color:#524201; 
+    font:13px/17px Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  #address h2{
+    width:163px; 
+    height:40px; 
+    background:url(images/infopaneltop.jpg) 0 0 no-repeat #3B3B3B; 
+    color:#fff; 
+    font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-weight:normal; 
+    padding:30px 0 0 24px;
+  }
+
+  #address p{
+    padding:10px 0 0 24px; 
+    line-height:17px;
+  }
+
+  #address p.view{
+    width:66px; 
+    height:18px; 
+    padding:10px 0 0 24px;
+  }
+
+  #address p.view a{
+    width:66px; 
+    height:18px; 
+    display:block; 
+    background:url(images/infoview-normal.gif) 0 0 no-repeat #F0C40E; 
+    color:#fff; 
+    font:12px/18px Verdana, Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    text-align:center; 
+    text-decoration:none;
+  }
+
+  #address p.view a:hover{
+    background:url(images/infoview-hover.gif) 0 0 no-repeat #F0C40E; 
+    color:#fff; 
+    text-decoration:none;
+  }
+
+  /*----/Info Panel----*/
+
+  /*----Services Panel----*/
+
+  #members{
+    width:187px; 
+    height:192px; 
+    background:url(images/servicespanelbg.jpg) 0 100% no-repeat #3B3B3B; 
+    color:#212121; 
+    float:left; 
+    margin:0 28px 0 0; 
+    font:13px/17px Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  #members h2{
+    width:163px; 
+    height:40px; 
+    background:url(images/servicespaneltop.jpg) 0 0 no-repeat #3B3B3B; 
+    color:#fff; 
+    font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-weight:normal; 
+    padding:30px 0 0 24px;
+  }
+
+  #members p{
+    padding:10px 0 0 24px; 
+    line-height:17px;
+  }
+
+  #members p.view{
+    width:66px; 
+    height:18px; 
+    padding:10px 0 0 24px;
+  }
+
+  #members p.view a{
+    width:66px; 
+    height:18px; 
+    display:block; 
+    background:url(images/servicesview-normal.gif) 0 0 no-repeat #B8B8B8; 
+    color:#fff; 
+    font:12px/18px Verdana, Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    text-align:center; 
+    text-decoration:none;
+  }
+
+  #members p.view a:hover{
+    background:url(images/servicesview-hover.gif) 0 0 no-repeat #B8B8B8; 
+    color:#fff; 
+    text-decoration:none;
+  }
+
+  /*----/Services Panel----*/
+
+  /*----Schedule Panel----*/
+
+  #rules{
+    width:187px; 
+    height:192px; 
+    background:url(images/schedulepanelbg.jpg) 0 100% no-repeat #3B3B3B; 
+    color:#fff; 
+    float:left; 
+    margin:0 28px 0 0; 
+    font:13px/17px Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  #rules h2{
+    width:163px; 
+    height:40px; 
+    background:url(images/schedulepaneltop.jpg) 0 0 no-repeat #3B3B3B; 
+    color:#fff; 
+    font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-weight:normal; 
+    padding:30px 0 0 24px;
+  }
+
+  #rules p{
+    padding:10px 0 0 24px; 
+    line-height:17px;
+  }
+
+  #rules p.view{
+    width:66px; 
+    height:18px; 
+    padding:10px 0 0 24px;
+  }
+
+  #rules p.view a{
+    width:66px; 
+    height:18px; 
+    display:block; 
+    background:url(images/scheduleview-normal.gif) 0 0 no-repeat #E45D5D; 
+    color:#fff; 
+    font:12px/18px Verdana, Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    text-align:center; 
+    text-decoration:none;
+  }
+
+  #rules p.view a:hover{
+    background:url(images/scheduleview-hover.gif) 0 0 no-repeat #E45D5D; 
+    color:#fff; 
+    text-decoration:none;
+  }
+
+  /*----/Schedule Panel----*/
+
+  /*----BOTOM PANEL----*/
+
+  #bottomPan{
+    height:282px; 
+    background:url(images/bottombg.gif) 0 0 repeat-x; 
+    position:relative; 
+    margin:0 auto; 
+    padding:65px 0 0; 
+    clear:both;
+  }
+
+  #bottomMainPan{
+    width:778px; 
+    position:relative; 
+    margin:0 auto; 
+    padding:50px 0 0;
+  }
+
+  #bottomBorderPan{
+    width:778px; 
+    float:left; 
+    background:url(images/bottomborder-bg1.gif) 0 0 repeat-y;
+  }
+
+  #bottomBorderPan h2{
+    width:210px; 
+    height:40px; 
+    position:absolute; 
+    top:28px; 
+    left:0px; 
+    display:block; 
+    background:#ccc; 
+    color:#0C0C0C; 
+    font:24px/40px Georgia, "Times New Roman", Times, serif;
+  }
+
+  #bottomBorderPan h3{
+    width:210px; 
+    height:40px; 
+    position:absolute; 
+    top:28px; 
+    left:259px; 
+    display:block; 
+    background:#ccc; 
+    color:#0C0C0C; 
+    font:24px/40px Georgia, "Times New Roman", Times, serif;
+  }
+
+  #bottomBorderPan h4{
+    width:210px; 
+    height:40px; 
+    position:absolute; 
+    top:28px; left:517px; 
+    display:block; 
+    background:#ccc; 
+    color:#0C0C0C; 
+    font:24px/40px Georgia, "Times New Roman", Times, serif;
+  }
+
+  #bottomBorderPan ul{
+    float:left; 
+    width:258px; 
+    padding:25px 0 0;
+  }
+
+  #bottomBorderPan ul li{
+    width:225px; 
+    height:22px; 
+    margin:0 10px 0 0;
+  }
+
+  #bottomBorderPan ul li a{
+    width:200px; 
+    height:22px; 
+    display:block; 
+    background:url(images/arrow-normal.gif) 0 8px no-repeat #ccc; 
+    color:#3D3C2C; 
+    font:14px/22px Arial, Helvetica, sans-serif; 
+    text-decoration:none; 
+    padding:0 0 0 16px;
+  }
+
+  #bottomBorderPan ul li a:hover{
+    background:url(images/arrow-hover.gif) 0 8px no-repeat #BDBDBD; 
+    color:#3D3C2C; 
+    text-decoration:none;
+  }
+</style>
+</head>
+
+<body>
+<div id="header_container">
+  <div id="header"><img id="top_photo" src="images/main_logo1.png" alt="Universal Library" title="Universal Library" border="0" />
+    
+    <ul>
+        <li><a href="Home_Page.html" target="_blank">Home</a></li>
+        <li><a href="Login_Page.html" target="_blank">Login</a></li>
+        <li><a href="Our_Books_Page.html" target="_blank">Our Books</a></li>
+        <li><a href="Membership_Page.html" target="_blank">Membership</a></li>
+        <li><a href="Contribute_Page.html" target="_blank">Contribute</a></li>
+        <li class="contact"><a href="Contact_Us_Page.html" target="_blank">Contact Us</a></li>
+    </ul>
+    <p></p>
+  </div>
+</div>
+<div id="bodymiddlePan">
+  <h2>Free Books Available</h2>
+  <p>
+    <ul>
+      <li><a href="Free_Books/Exceedingly Growing Faith by Kenneth E. Hagin ( PDFDrive ).pdf" target="_blank"><b style="color:white">Exceedingly Growing Faith by Kenneth E. Hagin</b></a></li><br>
+      <li><a href="Free_Books/Famous Five 01 - Five On A Treasure Island By Enid Blyton ( PDFDrive ).pdf" target="_blank"><b style="color:white">Famous Five 01 - Five On A Treasure Island By Enid Blyton</b></a></li><br>
+      <li><a href="Free_Books/Living in the Light_ A guide to personal transformation ( PDFDrive ).pdf" target="_blank"><b style="color:white">Living in the Light_ A guide to personal transformation</b></a></li><br>
+      <li><a href="Free_Books/Muhammad the Prophet by Maulana Muhammad Ali ( PDFDrive ).pdf" target="_blank"><b style="color:white">Muhammad the Prophet by Maulana Muhammad Ali</b></a></li><br>
+      <li><a href="Free_Books/The Daily Stoic_ 366 Meditations on Wisdom, Perseverance, and the Art of Living ( PDFDrive ).pdf" target="_blank"><b style="color:white">The Daily Stoic_ 366 Meditations on Wisdom, Perseverance, and the Art of Living</b></a></li><br>
+      <li><a href="Free_Books/THE LIGHTNING THIEF Percy Jackson and the Olympians - Book 1 Rick  ( PDFDrive ).pdf" target="_blank"><b style="color:white">THE LIGHTNING THIEF Percy Jackson and the Olympians - Book 1 Rick</b></a></li><br>
+      <li><a href="Free_Books/The Miracle Morning_ The Not-So-Obvious Secret Guaranteed to Transform Your Life ( PDFDrive ).pdf" target="_blank"><b style="color:white">The Miracle Morning_ The Not-So-Obvious Secret Guaranteed to Transform Your Life</b></a></li><br>
+      <li><a href="Free_Books/The Power of Now_ A Guide to Spiritual Enlightenment ( PDFDrive ).pdf" target="_blank"><b style="color:white">The Power of Now_ A Guide to Spiritual Enlightenment</b></a></li><br>
+    </ul>
+  </p>
+</div>
+<div id="bodyBottomPan">
+  <div id="address">
+    <h2>Address</h2>
+    <p>Map Location</p>
+    <p class="view"><a href="https://www.google.com/maps/place/Periyar+Central+Library/@12.9692163,79.1546776,17z/data=!3m1!4b1!4m5!3m4!1s0x3bad479f88f67f1f:0x200fabda69408aaf!8m2!3d12.9691443!4d79.1568664" target="_blank">View</a></p>
+  </div>
+  <div id="members">
+    <h2>Members</h2>
+    <p>Benefits and Price</p>
+    <p class="view"><a href="Textbox-Membership_Benefits_and_Price.html" target="_blank">View</a></p>
+  </div>
+  <div id="rules">
+    <h2>Rules</h2>
+    <p>List of Regulations</p>
+    <p class="view"><a href="Textbox-List_Of_Regulations.html" target="_blank">View</a></p>
+  </div>
+</div>
+<div id="bottomPan">
+  <div id="bottomMainPan">
+    <div id="bottomBorderPan">
+      <h2>Popular Readings</h2>
+      <h3>Library Benefits</h3>
+      <h4>Announcements</h4>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Anna_Karenina" target="_blank">Anna Karenina</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird" target="_blank">To Kill a Mockingbird</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/The_Great_Gatsby" target="_blank">The Great Gatsby</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude" target="_blank">One Hundred Years of Solitude</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/A_Passage_to_India" target="_blank">A Passage to India</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Invisible_Man" target="_blank">Invisible Man</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Don_Quixote" target="_blank">Don Quixote</a></li>
+      </ul>
+      <ul>
+        <li><a href="Benefits_1.html" target="_blank">Fostering Literacy</a></li>
+        <li><a href="Benefits_2.html" target="_blank">Healthy Communities</a></li>
+        <li><a href="Benefits_3.html" target="_blank">Cultural Support</a></li>
+        <li><a href="Benefits_4.html" target="_blank">Freedom</a></li>
+        <li><a href="Benefits_5.html" target="_blank">Creativity</a></li>
+        <li><a href="Benefits_6.html" target="_blank">Public Space</a></li>
+        <li><a href="Benefits_7.html" target="_blank">Exploration</a></li>
+      </ul>
+      <ul>
+        <li><a href="Announcements_New_Additions.html" target="_blank">New Additions</a></li>
+        <li><a href="Announcements_Major_Donators.html" target="_blank">Major Donators</a></li>
+        <li><a href="Announcements_Last_Penalty.html" target="_blank">Last Penalty Update</a></li>
+        <li><a href="Announcements_Librarians.html" target="_blank">Librarians</a></li>
+        <li><a href="Announcements_Reviews.html" target="_blank">Reviews</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</html>

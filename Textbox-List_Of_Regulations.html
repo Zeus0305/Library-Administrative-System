@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Universal Library - Rules and Regulations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style>
+  body{
+    background-color:#3B3B3B; 
+    color:#A4A4A4; 
+    padding:0px; 
+    margin:0px; 
+    font:13px/17px Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  div, ul, li, h1, h2, h3, h4, p, img{
+    margin:0px; padding:0px;
+  }
+
+  ul{
+    list-style-type:none;
+  }
+
+  /*----TOP PANEL----*/
+
+  #header_container{
+    height:299px; 
+    position:relative; 
+    margin:0 auto; 
+    padding:0px; 
+    background-image:url(images/header_slice.gif); 
+    background-repeat:repeat-x; 
+    background-position:top;
+  }
+
+  #header{
+    width:755px; 
+    height:299px; 
+    position:relative; 
+    margin:0 auto; 
+    padding:0px 9px 0px 14px;
+  }
+
+  #header img{
+    height:75px; 
+    width:750px; 
+    position:center; 
+    left:161px;
+    margin-top: 10px;
+    padding:0px;
+    border-radius: 10px;
+  }
+
+  #header ul{
+    width:94px; 
+    height:145px; 
+    padding:23px 29px 20px 40px; 
+    position:absolute; 
+    top:103px; 
+    left:0px; 
+    background:url(images/ul.gif) 0 0 no-repeat;
+  }
+
+  #header ul li{
+    background:url(images/bullet1.gif) 0 7px no-repeat #ccc; 
+    border-bottom:#929292 dotted 1px; 
+    font:12px/24px Verdana, Helvetica, sans-serif; 
+    font-weight:bold; 
+    color: #000; 
+    padding-left:10px;
+  }
+
+  #header ul li.contact{
+    border:none;
+  }
+
+  #header ul li a{
+    font-family:Verdana, Helvetica, sans-serif; 
+    font-size:12px; 
+    font-weight:bold; 
+    text-decoration:none; 
+    background:#ccc; 
+    color:#212121;
+  }
+
+  #header ul li a:hover{
+    background:#ccc; 
+    color:#B53332; 
+    text-decoration:none;
+  }
+
+  #header p{
+    padding:137px 0px 0px 33px; 
+    background:url(images/banner.jpg) 0 0 no-repeat #fff; 
+    width:547px; 
+    height:51px; 
+    position:absolute; 
+    top:103px; 
+    left:175px;
+    object-fit:auto;
+  }
+
+  /*----BODY MIDDLE PANEL----*/
+
+  #bodymiddlePan{
+    width:600px; 
+    position:relative; 
+    margin:0 auto; 
+    padding:0 88px; 
+    clear:both;
+    align-content:justify;
+  }
+
+  #bodymiddlePan h2{
+    width:400px; 
+    height:68px; 
+    display:block; 
+    background:#3B3B3B; 
+    color:#FBD61A; 
+    font:28px/68px Georgia, "Times New Roman", Times, serif; 
+    font-weight:normal;
+  }
+
+  #bodymiddlePan p{
+    background:#3B3B3B; 
+    color:#fff;
+  }
+
+  /*----BODY MIDDLE PANEL----*/
+
+  /*----BODY BOTTOM PANEL----*/
+
+  #bodyBottomPan{
+    width:690px; 
+    background:url(images/body_shadow.gif) 0 0 no-repeat; 
+    position:relative; 
+    margin:0 auto; 
+    padding:54px 0 0 88px; 
+    clear:both;
+  }
+
+  /*----Info Panel----*/
+
+  #address{
+    width:187px; 
+    height:192px; 
+    background:url(images/infopanelbg.jpg) 0 100% no-repeat #3B3B3B; 
+    float:left; 
+    margin:0 28px 0 0; 
+    color:#524201; 
+    font:13px/17px Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  #address h2{
+    width:163px; 
+    height:40px; 
+    background:url(images/infopaneltop.jpg) 0 0 no-repeat #3B3B3B; 
+    color:#fff; 
+    font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-weight:normal; 
+    padding:30px 0 0 24px;
+  }
+
+  #address p{
+    padding:10px 0 0 24px; 
+    line-height:17px;
+  }
+
+  #address p.view{
+    width:66px; 
+    height:18px; 
+    padding:10px 0 0 24px;
+  }
+
+  #address p.view a{
+    width:66px; 
+    height:18px; 
+    display:block; 
+    background:url(images/infoview-normal.gif) 0 0 no-repeat #F0C40E; 
+    color:#fff; 
+    font:12px/18px Verdana, Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    text-align:center; 
+    text-decoration:none;
+  }
+
+  #address p.view a:hover{
+    background:url(images/infoview-hover.gif) 0 0 no-repeat #F0C40E; 
+    color:#fff; 
+    text-decoration:none;
+  }
+
+  /*----/Info Panel----*/
+
+  /*----Services Panel----*/
+
+  #members{
+    width:187px; 
+    height:192px; 
+    background:url(images/servicespanelbg.jpg) 0 100% no-repeat #3B3B3B; 
+    color:#212121; 
+    float:left; 
+    margin:0 28px 0 0; 
+    font:13px/17px Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  #members h2{
+    width:163px; 
+    height:40px; 
+    background:url(images/servicespaneltop.jpg) 0 0 no-repeat #3B3B3B; 
+    color:#fff; 
+    font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-weight:normal; 
+    padding:30px 0 0 24px;
+  }
+
+  #members p{
+    padding:10px 0 0 24px; 
+    line-height:17px;
+  }
+
+  #members p.view{
+    width:66px; 
+    height:18px; 
+    padding:10px 0 0 24px;
+  }
+
+  #members p.view a{
+    width:66px; 
+    height:18px; 
+    display:block; 
+    background:url(images/servicesview-normal.gif) 0 0 no-repeat #B8B8B8; 
+    color:#fff; 
+    font:12px/18px Verdana, Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    text-align:center; 
+    text-decoration:none;
+  }
+
+  #members p.view a:hover{
+    background:url(images/servicesview-hover.gif) 0 0 no-repeat #B8B8B8; 
+    color:#fff; 
+    text-decoration:none;
+  }
+
+  /*----/Services Panel----*/
+
+  /*----Schedule Panel----*/
+
+  #rules{
+    width:187px; 
+    height:192px; 
+    background:url(images/schedulepanelbg.jpg) 0 100% no-repeat #3B3B3B; 
+    color:#fff; 
+    float:left; 
+    margin:0 28px 0 0; 
+    font:13px/17px Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  #rules h2{
+    width:163px; 
+    height:40px; 
+    background:url(images/schedulepaneltop.jpg) 0 0 no-repeat #3B3B3B; 
+    color:#fff; 
+    font:32px/36px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-weight:normal; 
+    padding:30px 0 0 24px;
+  }
+
+  #rules p{
+    padding:10px 0 0 24px; 
+    line-height:17px;
+  }
+
+  #rules p.view{
+    width:66px; 
+    height:18px; 
+    padding:10px 0 0 24px;
+  }
+
+  #rules p.view a{
+    width:66px; 
+    height:18px; 
+    display:block; 
+    background:url(images/scheduleview-normal.gif) 0 0 no-repeat #E45D5D; 
+    color:#fff; 
+    font:12px/18px Verdana, Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    text-align:center; 
+    text-decoration:none;
+  }
+
+  #rules p.view a:hover{
+    background:url(images/scheduleview-hover.gif) 0 0 no-repeat #E45D5D; 
+    color:#fff; 
+    text-decoration:none;
+  }
+
+  /*----/Schedule Panel----*/
+
+  /*----BOTOM PANEL----*/
+
+  #bottomPan{
+    height:282px; 
+    background:url(images/bottombg.gif) 0 0 repeat-x; 
+    position:relative; 
+    margin:0 auto; 
+    padding:65px 0 0; 
+    clear:both;
+  }
+
+  #bottomMainPan{
+    width:778px; 
+    position:relative; 
+    margin:0 auto; 
+    padding:50px 0 0;
+  }
+
+  #bottomBorderPan{
+    width:778px; 
+    float:left; 
+    background:url(images/bottomborder-bg1.gif) 0 0 repeat-y;
+  }
+
+  #bottomBorderPan h2{
+    width:210px; 
+    height:40px; 
+    position:absolute; 
+    top:28px; 
+    left:0px; 
+    display:block; 
+    background:#ccc; 
+    color:#0C0C0C; 
+    font:24px/40px Georgia, "Times New Roman", Times, serif;
+  }
+
+  #bottomBorderPan h3{
+    width:210px; 
+    height:40px; 
+    position:absolute; 
+    top:28px; 
+    left:259px; 
+    display:block; 
+    background:#ccc; 
+    color:#0C0C0C; 
+    font:24px/40px Georgia, "Times New Roman", Times, serif;
+  }
+
+  #bottomBorderPan h4{
+    width:210px; 
+    height:40px; 
+    position:absolute; 
+    top:28px; left:517px; 
+    display:block; 
+    background:#ccc; 
+    color:#0C0C0C; 
+    font:24px/40px Georgia, "Times New Roman", Times, serif;
+  }
+
+  #bottomBorderPan ul{
+    float:left; 
+    width:258px; 
+    padding:25px 0 0;
+  }
+
+  #bottomBorderPan ul li{
+    width:225px; 
+    height:22px; 
+    margin:0 10px 0 0;
+  }
+
+  #bottomBorderPan ul li a{
+    width:200px; 
+    height:22px; 
+    display:block; 
+    background:url(images/arrow-normal.gif) 0 8px no-repeat #ccc; 
+    color:#3D3C2C; 
+    font:14px/22px Arial, Helvetica, sans-serif; 
+    text-decoration:none; 
+    padding:0 0 0 16px;
+  }
+
+  #bottomBorderPan ul li a:hover{
+    background:url(images/arrow-hover.gif) 0 8px no-repeat #BDBDBD; 
+    color:#3D3C2C; 
+    text-decoration:none;
+  }
+</style>
+</head>
+
+<body>
+<div id="header_container">
+  <div id="header"><img id="top_photo" src="images/main_logo1.png" alt="Universal Library" title="Universal Library" border="0" />
+    
+    <ul>
+      <li><a href="Login_Page.html" target="_blank">Login</a></li>
+      <li><a href="Our_Books_Page.html" target="_blank">Our Books</a></li>
+      <li><a href="Membership_Page.html" target="_blank">Membership</a></li>
+      <li><a href="Free_Books_Page.html" target="_blank">Free Books</a></li>
+      <li><a href="Contribute_Page.html" target="_blank">Contribute</a></li>
+      <li class="contact"><a href="Contact_Us_Page.html" target="_blank">Contact Us</a></li>
+    </ul>
+    <p></p>
+  </div>
+</div>
+<div id="bodymiddlePan">
+  <h2>Rules and Regulations</h2>
+  <p><b style = "color:#F0C40E;">General Rules</b><br><br>
+    1.	Readers should observe strict silence inside the Library.<br><br>
+    2.	Use of Mobile phones is not permitted inside the Library premises.<br><br>
+    3.	Users are not allowed to carry eatables/drinks inside the Library premises.<br><br>
+    4.	Library membership card is non-transferable.<br><br>
+    5.	Readers are not allowed to bring their personal books or any printed material (spiral/bound book/photocopied material) inside the Library.<br><br>
+    6.	 Personal belongings like bags (laptop, shoulder, sling), umbrellas, etc. should be deposited at the Property Counter against a token. These are not allowed inside the Library.<br><br>
+    7.	In case the property counter token is lost, the deposited article may be claimed with proper identification after producing a written request.<br><br>
+    8.	Readers are advised not to leave their valuable items like money, passport, credit card etc. at the Property Counter.<br><br>
+    9.	Marking, scratching, damaging, mutilating, stealing, library materials or property will invite disciplinary action against the defaulters.<br><br>
+    10.	Readers should not carry books from one floor to another and should leave the books on the reading table after consulting.<br><br>
+    11.	Readers should not talk or discuss loudly as they may disturb other readers.<br><br>
+    12.	Users should not rest or keep their feet on tables, chairs, shelves, etc.<br><br>
+    13.	The library shall not be responsible for any loss or damage of the personal belongings of the users.<br><br>
+    14.	Library staff shall not transmit telephone calls or other personal messages to the readers.<br><br>
+    15.	The Librarian reserves the right to suspend the membership of any member found misbehaving with the library staff or with any other member.<br><br>
+    16.	The Librarian is empowered to recall any book at any time if necessity arises.<br><br>
+    <b style = "color:#F0C40E;">Rules For Usage of Library Computer</b><br><br>
+    1.	Computer in the library premises should be used for academic purposes only.<br><br>
+    2.	Online chatting/dating, browsing of social networking sites is strictly prohibited. Strict disciplinary action will be taken against the defaulters.<br><br>
+    3.	Playing games on computers is strictly prohibited in the entire Library premises.<br><br>
+    4.	Readers must carry their Library Membership card while using the Cyber Library. They must show their ID card on demand.<br><br>
+    5.	Readers are not allowed to share their Internet access ID and Password with others.<br><br>
+    6.	Changing the settings and display of the computers kept in the Library is not permitted.<br><br>
+    7.	Use of laptops in the cubical systems where computers are already installed is not permitted.<br><br>
+    8.	Readers should not remove/unplug computer cables/connections, network cables and other peripherals/accessories in the library.<br><br>
+    9.	Personal keyboard, mouse, etc are not allowed inside the Library.<br><br>
+    10.	Students must take care of their Pen drives, CD/DVD ROMs, mobiles and wallets etc<br><br>
+    These rules are subject to revision from time to time without assigning any reason.  For latest Library rules and regulations, please keep checking Rules and Regulations.<br><br>
+    </p>
+</div>
+<div id="bodyBottomPan">
+  <div id="address">
+    <h2>Address</h2>
+    <p>Map Location</p>
+    <p class="view"><a href="https://www.google.com/maps/place/Periyar+Central+Library/@12.9692163,79.1546776,17z/data=!3m1!4b1!4m5!3m4!1s0x3bad479f88f67f1f:0x200fabda69408aaf!8m2!3d12.9691443!4d79.1568664" target="_blank">View</a></p>
+  </div>
+  <div id="members">
+    <h2>Members</h2>
+    <p>Benefits and Price</p>
+    <p class="view"><a href="Textbox-Membership_Benefits_and_Price.html" target="_blank">View</a></p>
+  </div>
+</div>
+
+<div id="bottomPan">
+  <div id="bottomMainPan">
+    <div id="bottomBorderPan">
+      <h2>Popular Readings</h2>
+      <h3>Library Benefits</h3>
+      <h4>Announcements</h4>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Anna_Karenina" target="_blank">Anna Karenina</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird" target="_blank">To Kill a Mockingbird</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/The_Great_Gatsby" target="_blank">The Great Gatsby</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude" target="_blank">One Hundred Years of Solitude</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/A_Passage_to_India" target="_blank">A Passage to India</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Invisible_Man" target="_blank">Invisible Man</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Don_Quixote" target="_blank">Don Quixote</a></li>
+      </ul>
+      <ul>
+        <li><a href="Benefits_1.html" target="_blank">Fostering Literacy</a></li>
+        <li><a href="Benefits_2.html" target="_blank">Healthy Communities</a></li>
+        <li><a href="Benefits_3.html" target="_blank">Cultural Support</a></li>
+        <li><a href="Benefits_4.html" target="_blank">Freedom</a></li>
+        <li><a href="Benefits_5.html" target="_blank">Creativity</a></li>
+        <li><a href="Benefits_6.html" target="_blank">Public Space</a></li>
+        <li><a href="Benefits_7.html" target="_blank">Exploration</a></li>
+      </ul>
+      <ul>
+        <li><a href="Announcements_New_Additions.html" target="_blank">New Additions</a></li>
+        <li><a href="Announcements_Major_Donators.html" target="_blank">Major Donators</a></li>
+        <li><a href="Announcements_Last_Penalty.html" target="_blank">Last Penalty Update</a></li>
+        <li><a href="Announcements_Librarians.html" target="_blank">Librarians</a></li>
+        <li><a href="Announcements_Reviews.html" target="_blank">Reviews</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</html>
